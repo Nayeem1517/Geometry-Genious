@@ -13,8 +13,13 @@
 </head>
 
 <body >
-    <header>
-
+    <header class="flex flex-col lg:flex-row mt-10">
+        <div class="navbar bg-base-100 p-8">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-4xl font-bold text-violet-700">AREA CALCULATOR</a>
+            </div>
+            
+          </div>
     </header>
     <main class=" mt-10">
         <!-- Main Container  -->
@@ -118,6 +123,26 @@
                         <p  class="text-2xl font-semibold">Area : <span id="ellipse-area"> 0</span> cm<sup>2</sup> </p>
                         <div class="card-actions justify-end">
                             <button onclick="calculateEllipseArea()" class="btn btn-primary w-full bg-amber-500 hover:bg-red-500">CALCULATE</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pentagon Class  -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="images/pentagon.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) =  [(5/2) X s X a]  </p>
+                        <p>
+                            <input id="side-length" type="text" class="ml-4 text-xl bg-gray-200 border w-24 px-2" placeholder="Side">
+                            <span class="ml-2">cm</span>
+                            <input id="apothem-length" type="text" class="ml-4 text-xl bg-gray-200 border w-24 px-2" placeholder="Length">
+                            <span class="ml-2">cm </span>
+                        </p>
+                        <p  class="text-2xl font-semibold">Area : <span id="pentagon-area"> 0</span> cm<sup>2</sup> </p>
+                        <div class="card-actions justify-end">
+                            <button onclick="calculatePentagonArea()" class="btn btn-primary w-full bg-amber-500 hover:bg-red-500">CALCULATE</button>
                         </div>
                     </div>
                 </div>

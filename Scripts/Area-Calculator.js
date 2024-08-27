@@ -81,6 +81,20 @@ function calculateRombhoshArea(){
     setElementsInnerText('ellipse-area', ellipsArea)
  }
 
+// Finding The Pentagon Area 
+
+function calculatePentagonArea(){
+    const sideLength = getInputValue('side-length');
+    const apothemLength = getInputValue('apothem-length');
+
+    //Calculating The Pentagon Area 
+const pentagoneArea = (5/2) * sideLength * apothemLength ;
+
+//Set The Area To the Area Scetion Using Function
+setElementsInnerText('pentagon-area',pentagoneArea);
+
+}
+
 //Getting the Reuseable input Feild via Function
 function getInputValue(feildId){
     const inputFeild = document.getElementById(feildId);
